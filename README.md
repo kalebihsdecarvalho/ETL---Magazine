@@ -19,42 +19,6 @@ It is designed to be reproducible, extensible, and suitable for analytics teams.
 - Store datasets in analytics-friendly formats
 - Enable downstream product analytics and NLP
 
----
-
-## Folder Structure
-
-news-pipeline/
-│
-├── data/
-│ ├── raw/ # Raw scraped HTML / JSON
-│ ├── processed/ # Cleaned and structured datasets
-│ └── external/ # External reference data (optional)
-│
-├── src/
-│ ├── ingestion/ # Website/API collectors
-│ ├── parsing/ # HTML/JSON parsing logic
-│ ├── transformation/ # Cleaning, normalization, enrichment
-│ ├── validation/ # Data quality checks
-│ └── utils/ # Shared utilities (logging, helpers)
-│
-├── notebooks/
-│ ├── exploration/ # EDA and prototyping
-│ ├── analytics/ # Product / content analytics
-│ └── nlp/ # NLP experiments
-│
-├── configs/
-│ └── sources.yaml # Website/API configurations
-│
-├── tests/ # Unit tests
-│
-├── docs/
-│ └── diagrams/ # Architecture diagrams
-│
-├── requirements.txt
-└── README.md
-
----
-
 ## Data Engineering Architecture
 
 The pipeline follows a layered approach similar to modern analytics stacks.
